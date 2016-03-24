@@ -17,8 +17,10 @@ public class MyJPanel extends JPanel implements MouseMotionListener{
 	}
 	protected void paintComponent(Graphics g){
 		super.paintComponent(g);
-		g.drawRect(square.getCenterX(centerX),square.getCentertY(centerY),square.getShapeHeight(),square.getShapeHeight());
-		g.fillRect(square.getCenterX(centerX),square.getCentertY(centerY),square.getShapeHeight(),square.getShapeHeight());
+		
+		g.setColor(square.getRandomColor());
+		g.fillRect(square.getCenterX(centerX),square.getCenterY(centerY),square.getShapeHeight(),square.getShapeHeight());
+
 		// TODO Draw square and fill it with random color decided by method getRandomColor()
 		// You should use fillRect()
 
@@ -26,8 +28,8 @@ public class MyJPanel extends JPanel implements MouseMotionListener{
 
 	@Override
 	public void mouseDragged(MouseEvent e) {
+				// TODO Get mouse dragged position and change suqare's position
 		
-		// TODO Get mouse dragged position and change suqare's position
 		centerX = e.getX();
 		centerY = e.getY();
 		repaint();
