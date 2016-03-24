@@ -1,11 +1,10 @@
-# SoftwareStudioLab4
+﻿# SoftwareStudioLab4
 SoftwareStudio Lab4 2016
 
 # 組員一
+姓名：杜祥皓
 
-姓名：
-
-學號：
+學號：103062126
 
 # 組員二
 
